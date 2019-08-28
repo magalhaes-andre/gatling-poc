@@ -15,7 +15,7 @@ pipeline{
             steps{
                 git branch: 'master',
                 credentialsId: "${params.credential}",
-                url: 'https://github.com/magalhaes-andre/jts.devops.2019.1'
+                url: 'https://github.com/magalhaes-andre/gatling-poc'
             }
         }
 
