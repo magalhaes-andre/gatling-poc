@@ -13,8 +13,7 @@ pipeline{
 
         stage('Getting git') {
             steps{
-                git 
-                branch: 'master',
+                git branch: 'master',
                 credentialsId: "${params.credential}",
                 url: 'https://github.com/magalhaes-andre/jts.devops.2019.1'
             }
