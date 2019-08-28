@@ -27,9 +27,7 @@ pipeline{
 
         stage ('Running Gatling Test'){
             steps{
-                dir("andre-magalhaes/tema_16/"){
                     sh "sbt gatling:test"
-                }
             }
         }
     }
