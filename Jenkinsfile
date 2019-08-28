@@ -13,9 +13,7 @@ pipeline{
 
         stage('Getting git') {
             steps{
-                git branch: 'tema_16',
-                credentialsId: "${params.credential}",
-                url: 'https://github.com/magalhaes-andre/jts.devops.2019.1'
+                git url: 'https://github.com/magalhaes-andre/gatling-poc'
             }
         }
 

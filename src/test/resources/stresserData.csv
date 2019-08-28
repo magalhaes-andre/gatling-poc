@@ -1,3 +1,4 @@
+pauseType, pauseTime
 sumPauseTime, 1
 subPauseTime, 1
 divPauseTime, 3

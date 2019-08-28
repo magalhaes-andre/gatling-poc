@@ -5,11 +5,10 @@ import io.gatling.http.Predef._
 import scala.concurrent.duration._
 
 class Stresser extends Simulation{
-
-    val feeder = csv("stresserData.csv").eager.random
     val httpProtocol = http.baseUrl("http://localhost:8083").acceptHeader("application/json")
     
     object Sum {
+        
         val execute = exec(http("Sum #1")
             .get("/calc/sum/1/2"))
             .pause(2)
